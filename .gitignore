@@ -1,0 +1,19 @@
+# MkDocs generated site
+site/
+_site/
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.Rhistory
+
