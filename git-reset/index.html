@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#executing-the-git-reset-in-vs-code" class="md-skip">
+        <a href="#executing-the-git-reset-in-vs-code-mac" class="md-skip">
           Skip to content
         </a>
       
@@ -443,10 +443,9 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Step 2: Execute the Commands">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#step-3-deploy-the-updates" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -454,11 +453,6 @@
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -524,10 +518,9 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Step 2: Execute the Commands">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#step-3-deploy-the-updates" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -535,11 +528,6 @@
       
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -560,7 +548,7 @@
 
 
 
-<h1 id="executing-the-git-reset-in-vs-code">Executing the Git Reset in VS Code</h1>
+<h1 id="executing-the-git-reset-in-vs-code-mac">Executing the Git Reset in VS Code (Mac)</h1>
 <p>Visual Studio Code's graphical interface does not support creating "orphan branches." Therefore, the most efficient method is to execute the exact same commands using VS Code's Integrated Terminal.</p>
 <h2 id="step-1-open-the-integrated-terminal">Step 1: Open the Integrated Terminal</h2>
 <ol>
@@ -571,14 +559,19 @@
 <h2 id="step-2-execute-the-commands">Step 2: Execute the Commands</h2>
 <p>Copy and paste the sequence directly into the VS Code terminal. Press Enter after each line.</p>
 <pre><code class="language-bash">git checkout --orphan temp_branch
-git add -A
-git commit -m &quot;Initial commit&quot;
-git branch -D main
-git branch -m main
-git push -f origin main
+</code></pre>
+<pre><code class="language-bash">git add -A
+</code></pre>
+<pre><code class="language-bash">git commit -m &quot;Initial commit&quot;
+</code></pre>
+<pre><code class="language-bash">git branch -D main
+</code></pre>
+<pre><code class="language-bash">git branch -m main
+</code></pre>
+<pre><code class="language-bash">git push -f origin main
 </code></pre>
 <p>Note: This will completely overwrite the remote repository history, resulting in a single, clean commit.</p>
-<h3 id="step-3-deploy-the-updates">Step 3: Deploy the Updates</h3>
+<h2 id="step-3-deploy-the-updates">Step 3: Deploy the Updates</h2>
 <p>Because we previously set up GitHub Actions, deploying these changes is fully automated. You only need to push your local files to GitHub.</p>
 <p>Run these commands in your VS Code terminal:</p>
 <pre><code class="language-bash">git add .
