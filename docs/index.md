@@ -1,17 +1,12 @@
-# Welcome to MkDocs
+# Research Compendium
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Welcome to my centralized knowledge base. This repository serves as a living documentation space for my applied research, technical workflows, and data architecture implementations.
 
-## Commands
+As a researcher transitioning into doctoral studies in computer science, I utilize this space to meticulously catalog standard operating procedures and algorithmic designs. The primary focus areas of this compendium include:
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+* **Machine Learning & Deep Learning:** Model optimization, experiment tracking, and image processing methodologies.
+* **Natural Language Processing & LLMs:** Text processing pipelines, fine-tuning strategies, and applied sentiment analysis.
+* **Data Infrastructure:** Scalable data management techniques and engineering best practices.
+* **Version Control & Workflows:** Protocols for maintaining clean, reproducible research environments.
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Please use the top navigation menu to browse specific guides, code snippets, and research notes.
