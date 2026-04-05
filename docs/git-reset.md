@@ -1,4 +1,4 @@
-# Executing the Git Reset in VS Code
+# Executing the Git Reset in VS Code (Mac)
 
 Visual Studio Code's graphical interface does not support creating "orphan branches." Therefore, the most efficient method is to execute the exact same commands using VS Code's Integrated Terminal.
 
@@ -12,15 +12,26 @@ Copy and paste the sequence directly into the VS Code terminal. Press Enter afte
 
 ```bash
 git checkout --orphan temp_branch
+```
+```bash
 git add -A
+```
+```bash
 git commit -m "Initial commit"
+```
+```bash
 git branch -D main
+```
+```bash
 git branch -m main
+```
+```bash
 git push -f origin main
 ```
+
 Note: This will completely overwrite the remote repository history, resulting in a single, clean commit.
 
-### Step 3: Deploy the Updates
+## Step 3: Deploy the Updates
 Because we previously set up GitHub Actions, deploying these changes is fully automated. You only need to push your local files to GitHub.
 
 Run these commands in your VS Code terminal:
